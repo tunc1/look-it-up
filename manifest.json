@@ -1,0 +1,17 @@
+{
+    "name": "Look it Up",
+    "description": "Searching English Words on Dictionary",
+    "version": "1.0",
+    "manifest_version": 2,
+    "permissions":
+    [
+        "contextMenus"
+    ],
+    "background":
+    {
+        "scripts":
+        [
+            "background.js"
+        ]
+    }
+}
