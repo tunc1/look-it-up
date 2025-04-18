@@ -8,8 +8,13 @@ const contextClick=(info,tab)=>
 {
 	if(info.menuItemId==ID)
 	{
-		url="https://dictionary.cambridge.org/dictionary/english/"+info.selectionText;
-		browser.tabs.create({"url":url});
+		browser.storage.local.get("dictionaryURL").then(data=>{
+			if(data.dictionaryURL)
+			{
+				const url=data.dictionaryURL.replace("%searchText%",info.selectionText);
+				browser.tabs.create({"url":url});
+			}
+		});
 	}
 };
 browser.contextMenus.onClicked.addListener(contextClick);
