@@ -17,4 +17,4 @@ Example: https://dictionary.cambridge.org/dictionary/english/do
 ```
 Example: https://dictionary.cambridge.org/dictionary/english/%searchText%
 ```
-3. Paste this url on the pop up and click "Update URL"
+3. Paste this url on the preferences and click "Update URL"
